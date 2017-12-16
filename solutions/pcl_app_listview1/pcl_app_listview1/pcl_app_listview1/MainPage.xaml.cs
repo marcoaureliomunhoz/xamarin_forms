@@ -19,9 +19,9 @@ namespace pcl_app_listview1
             listEditoras.ItemTapped += ListEditoras_ItemTapped;
         }
 
-        private async void ListEditoras_ItemTapped(object sender, ItemTappedEventArgs e)
+        private void ListEditoras_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            await DisplayAlert("Editora", e.Item.ToString(), "OK");
+            DisplayAlert("Editora", e.Item.ToString(), "OK");
             (sender as ListView).SelectedItem = null;
         }
     }
