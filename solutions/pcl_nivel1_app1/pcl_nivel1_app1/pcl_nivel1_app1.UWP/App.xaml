@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="pcl_nivel1_app1.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:pcl_nivel1_app1.UWP"
+    RequestedTheme="Light">
+
+</Application>

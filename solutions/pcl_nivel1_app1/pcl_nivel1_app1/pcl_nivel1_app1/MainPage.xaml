@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:pcl_nivel1_app1"
+             x:Class="pcl_nivel1_app1.MainPage">
+
+    <StackLayout
+        BackgroundColor="DarkGray"
+        Padding="20">
+        <Label 
+            TextColor="White"
+            HorizontalOptions="Fill"
+            FontSize="Medium"
+            Text="Informe seu nome abaixo:" />
+        <Entry
+            x:Name="txtNome"
+            BackgroundColor="LightGray"
+            TextColor="Black"
+            HorizontalOptions="Fill"
+            FontSize="Medium"/>
+        <Button 
+            x:Name="btnCliqueAqui"
+            TextColor="White"
+            BackgroundColor="OrangeRed"
+            HorizontalOptions="Center"
+            Text="Clique Aqui!"/>
+        <Label 
+            x:Name="lblNome"
+            TextColor="Yellow"
+            HorizontalOptions="Fill"
+            FontSize="Medium"
+            Text="" />
+    </StackLayout>
+
+</ContentPage>
