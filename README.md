@@ -50,3 +50,32 @@
     - **Persistindo em disco através do dicionário Properties:** esse recurso é mais usado quando o sistema operacional tira a aplicação de cena levando ela para segundo plano e depois volta ela, ou seja, quando a aplicação desaparece (OnDisappearing) e depois de um tempo ela aparece (OnAppearing). 
         - Salvando: Application.Current.Properties["id"] = 123;
         - Recuperando: int id = (int) Application.Current.Properties["id"];
+
+**Vinculação a Dados**
+
+- Temos duas opções:
+    - Vinculação a dados trivial: alterações na visão são refletidas automaticamente no modelo de dados, mas não o contrário.
+        - Toda visão, inclusive uma página, possui uma propriedade chamada **BindingContext** e toda visão possui um método chamado **SetBinding**. É através de BindingContext que indicamos para a visão onde estão os dados e é através de SetBinding que indicamos para a visão qual propriedade do modelo deve ser atualizada.
+        ````csharp
+        //aqui temos a classe do modelo
+        class MyModel {
+            public string Property1 { get; set; }
+            public int Property2 { get; set; } 
+        }
+        
+        //aqui temos o modelo
+        var myModel = new MyModel(); 
+        
+        //aqui temos duas caixas de texto e estamos indicando onde estão os dados no nível da visão
+        myEntryView1.BindingContext = myModel;
+        myEntryView2.BindingContext = myModel;
+        
+        //aqui temos uma outra forma de indicar onde estão os dados (no nível da página)  
+        //this..BindingContext = myModel;
+        
+        //aqui estamos indicando para cada caixa de texto qual propriedade do modelo deve ser atualizada
+        myEntryView1.SetBinding(Entry.TextProperty, "Property1");
+        myEntryView2.SetBinding(Entry.TextProperty, "Property2");
+        ````
+    - Vinculação a dados não trivial: alterações na visão são refletidas automaticamente no modelo de dados e alterações no modelo de dados são refletidas automaticamente na visão. Porém para que esse mecanismo de mão dupla funcione precisamos implementar na classe de modelo a interface **INotifyPropertyChanged**. 
+        > Essa escolha de vincular o modelo de dados diretamente com a visão não é muito indicada. Um padrão muito utilizado em xamarin é o MVVM onde temos a Visão (View), o Modelo de Dados (Model) e uma classe que fica no meio do caminho chamada de Modelo de Visão (ViewModel). Neste caso o modelo de dados não implementa INotifyPropertyChanged, a implementação fica no modelo de visão, a vinculação do modelo de visão ocorre no nível de página e as vinculações de propriedades de cada visão continuam sendo feitas com SetBinding.
