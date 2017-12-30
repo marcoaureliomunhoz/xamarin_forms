@@ -4,8 +4,18 @@
              xmlns:local="clr-namespace:OlaMundoPCL"
              x:Class="OlaMundoPCL.MainPage">
 
-	<Label Text="Olá Mundo Xamarin PCL!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout>
+        
+	    <Label Text="Olá Mundo Xamarin PCL!"/>
 
+        <Button x:Name="btnSecondPage" Text="Second Page"/>
+
+        <Button x:Name="btnModal1" Text="Modal1"/>
+
+        <Button x:Name="btnAlert1" Text="Alert1"/>
+
+        <Button x:Name="btnActionSheet1" Text="ActionSheet1"/>
+
+    </StackLayout>
+    
 </ContentPage>

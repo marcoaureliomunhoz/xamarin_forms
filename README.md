@@ -20,9 +20,9 @@
     - Label
     - Image
     - Button
-    - BoxView
+    - BoxView: retângulo gráfico colorido. Pode ser usado para inserir imagem ou outra view ou grupo de views mais complexos.
     - ListView
-    - Entry
+    - Entry: caixa de texto de uma única linha. Herda de _InputView_.
     - Editor
     - Picker
     - DatePicker

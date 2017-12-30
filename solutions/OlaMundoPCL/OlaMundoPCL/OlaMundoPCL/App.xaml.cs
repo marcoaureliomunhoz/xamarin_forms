@@ -13,7 +13,7 @@ namespace OlaMundoPCL
         {
             InitializeComponent();
 
-            MainPage = new OlaMundoPCL.MainPage();
+            MainPage = new NavigationPage(new OlaMundoPCL.MainPage());
         }
 
         protected override void OnStart()

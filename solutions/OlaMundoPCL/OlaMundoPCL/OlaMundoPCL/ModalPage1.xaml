@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OlaMundoPCL.ModalPage1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Modal Page 1" />
+            <Button x:Name="btnVoltar" Text="Voltar"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
