@@ -79,3 +79,12 @@
         ````
     - Vinculação a dados não trivial: alterações na visão são refletidas automaticamente no modelo de dados e alterações no modelo de dados são refletidas automaticamente na visão. Porém para que esse mecanismo de mão dupla funcione precisamos implementar na classe de modelo a interface **INotifyPropertyChanged**. 
         > Essa escolha de vincular o modelo de dados diretamente com a visão não é muito indicada. Um padrão muito utilizado em xamarin é o MVVM onde temos a Visão (View), o Modelo de Dados (Model) e uma classe que fica no meio do caminho chamada de Modelo de Visão (ViewModel). Neste caso o modelo de dados não implementa INotifyPropertyChanged, a implementação fica no modelo de visão, a vinculação do modelo de visão ocorre no nível de página e as vinculações de propriedades de cada visão continuam sendo feitas com SetBinding.
+
+**SQLite** 
+
+Opções para acessar bases SQLite:
+- Biblioteca ORM criada por "Frank A. Krueger": para fazer uso da biblioteca num projeto PCL temos que instalar a biblioteca em todos os projetos da solução e obter **SQLiteConnection** de cada projeto específico através da classe **DependencyService**.
+- ADO.NET: onde usamos SQLiteCommand e SQLiteDataReader.
+
+
+

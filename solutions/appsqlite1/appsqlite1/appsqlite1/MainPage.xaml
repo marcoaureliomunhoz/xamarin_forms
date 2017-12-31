@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:appsqlite1"
+             x:Class="appsqlite1.MainPage">
+
+    <StackLayout>
+        <Label Text="Código"/>
+        <Entry x:Name="txtCodigo"/>
+        <Button x:Name="btnCarregar" Text="Carregar"/>
+        <Label Text="Nome"/>
+        <Entry x:Name="txtNome"/>
+        <Label Text="Time"/>
+        <Entry x:Name="txtTime"/>
+        <Button x:Name="btnSalvar" Text="Salvar"/>
+        <Button x:Name="btnExcluir" Text="Excluir"/>
+    </StackLayout>
+
+</ContentPage>
