@@ -86,5 +86,6 @@ Opções para acessar bases SQLite:
 - Biblioteca ORM criada por "Frank A. Krueger": para fazer uso da biblioteca num projeto PCL temos que instalar a biblioteca em todos os projetos da solução e obter **SQLiteConnection** de cada projeto específico através da classe **DependencyService**.
 - ADO.NET: onde usamos SQLiteCommand e SQLiteDataReader.
 
+**Acessando APIs do Sistema Operacional Local**
 
-
+Existem certas circunstâncias em que somos obrigados a usar APIs do sistema operacional local. Nestas circunstâncias, em soluções PCL, para que o projeto PCL utilize instâncias criadas a nível específico podemos usar injeção de dependência e em soluções de projetos compartilhados podemos usar _compilação condicional_.
