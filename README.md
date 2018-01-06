@@ -1,5 +1,11 @@
 # Xamarin Forms
 
+**Introdução** 
+
+Xamarin Forms é um framework (biblioteca/pacote NuGet). Ele abstrai as diferenças de implementação de cada plataforma através mapeamentos.
+
+Como se trata de um framework ele pode ser obtido/atualizado via NuGet. Geralmente a versão que acompanha as ferramentas como o Visual Studio é uma versão mais antiga, porém através do NuGet é possível fazer a atualização.
+
 **Principais Elementos**
 
 - Page (Páginas)
