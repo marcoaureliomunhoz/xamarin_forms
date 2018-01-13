@@ -94,4 +94,74 @@ Opções para acessar bases SQLite:
 
 **Acessando APIs do Sistema Operacional Local**
 
-Existem certas circunstâncias em que somos obrigados a usar APIs do sistema operacional local. Nestas circunstâncias, em soluções PCL, para que o projeto PCL utilize instâncias criadas a nível específico podemos usar injeção de dependência e em soluções de projetos compartilhados podemos usar _compilação condicional_.
+Existem certas circunstâncias em que somos obrigados a usar APIs do sistema operacional local. Nestas circunstâncias, em soluções PCL/Standard, para que o projeto PCL utilize instâncias criadas a nível específico podemos usar injeção de dependência e em soluções de projetos compartilhados podemos usar _compilação condicional_.
+
+**Acessando o Clipboard em soluções PCL/Standard através de DependencyService** 
+
+Para acessar o Clipboard em soluções PCL/Standard temos que usar **Interface** de serviço, e injeção de dependência (**DependencyService**). 
+
+- **1º Passo:** criar uma interface no projeto compartilhado.
+    ```csharp
+    namespace App.Core 
+    {
+        public interface IClipboardService 
+        {
+            void SetText(string text);
+        }
+    }
+    ```
+- **2º Passo:** implementar classes concretas para cada projeto específico.
+    ```csharp
+    //--- Projeto iOS ---
+    [assembly: Dependency(typeof(ClipboardService_iOS))]
+    namespace App.iOS 
+    {
+        public class ClipboardService_iOS : IClipboardService
+        {
+            public void SetText(string text) 
+            {
+                UIPasteboard clipboard = UIPasteboard.General;
+                clipboard.String = text;
+            }
+        }
+    }
+    //--- Projeto Android ---
+    [assembly: Dependency(typeof(ClipboardService_Droid))]
+    namespace App.Droid 
+    {
+        public class ClipboardService_Droid : IClipboardService
+        {
+            public void SetText(string text) 
+            {
+                var clipboardManager = (ClipboardManager)Android.App.Application.Context.GetSystemService(Context.ClipboardService);
+
+                ClipData clipData = ClipData.NewPlainText("title", text);
+
+                clipboardManager.PrimaryClip = clipData;
+            }
+        }
+    }
+    ```    
+- **3º Passo:** usar o recurso no code-behind do projeto compartilhado.
+    ```csharp
+    namespace App.Core 
+    {
+        public partial class MainPage : ContentPage 
+        {
+            public MainPage() 
+            {  
+                DependencyService.Get<IClipboardService>.SetText("blábláblá");
+            }
+        }
+    }
+    ```
+
+---
+
+**Fontes** 
+
+- https://www.youtube.com/channel/UCe-f02uZgEXdHmHpC3loAQg (Xamarin)
+- https://www.youtube.com/user/MicrosoftBrasil (Microsoft Brasil)
+- https://www.youtube.com/channel/UCFaQBRaoHrAxcGoeY8E5jvQ (Monkey Nights)
+- https://www.youtube.com/user/angelobelchior (Angelo Belchior)
+- https://www.youtube.com/user/ata275 (Tiago Britto)
