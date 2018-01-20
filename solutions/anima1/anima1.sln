@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "anima1.Android", "anima1\anima1.Android\anima1.Android.csproj", "{D51F739B-14EC-4194-A1B0-2C1358475ED2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "anima1", "anima1\anima1\anima1.csproj", "{08928DFC-1DF7-4692-B547-74610571C003}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D51F739B-14EC-4194-A1B0-2C1358475ED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51F739B-14EC-4194-A1B0-2C1358475ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51F739B-14EC-4194-A1B0-2C1358475ED2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D51F739B-14EC-4194-A1B0-2C1358475ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51F739B-14EC-4194-A1B0-2C1358475ED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D51F739B-14EC-4194-A1B0-2C1358475ED2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{08928DFC-1DF7-4692-B547-74610571C003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08928DFC-1DF7-4692-B547-74610571C003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08928DFC-1DF7-4692-B547-74610571C003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08928DFC-1DF7-4692-B547-74610571C003}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F10E99F6-722F-4BB2-9097-0789D0C3EFF6}
+	EndGlobalSection
+EndGlobal

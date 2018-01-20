@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:anima1"
+             x:Class="anima1.MainPage">
+
+    <StackLayout Padding="20">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="Esconder" x:Name="btnEsconder"/>
+            <Button Text="Mostrar" x:Name="btnMostrar"/>
+            <Button Text="Cancelar" x:Name="btnCancelar"/>
+        </StackLayout>
+        <Image Source="icon.png" x:Name="imagem"/>
+    </StackLayout>
+
+</ContentPage>

@@ -156,6 +156,37 @@ Para acessar o Clipboard em soluções PCL/Standard temos que usar **Interface**
     }
     ```
 
+**Animações**
+
+É muito fácil promover animações em nossas visões usando Xamarin Forms. Todas as **Views** possuem métodos de extensão voltados para animação.
+
+Exemplo:
+```csharp
+    //aplicando escala 0 em uma imagem durante 1 segundo
+    imagem.ScaleTo(0, 1000);
+
+    //aplicando escala 2x em uma imagem durante 1 segundo
+    imagem.ScaleTo(2, 1000);
+
+    //rotacionando uma imagem 360° durante 1 segundo
+    imagem.RotateTo(360, 1000);
+
+    //rotacionando uma imagem -360° durante 1 segundo
+    imagem.RotateTo(-360, 1000);
+
+    //combinando várias animações em paralelo
+    await Task.WhenAll(
+        imagem.ScaleTo(2, 1000), //2x em 1 segundo
+        imagem.RotateTo(360, 1000) //360° em 1 segundo
+    );    
+
+    //cancelando animações para uma dada view
+    ViewExtensions.CancelAnimations(imagem);
+```
+
+Mais exemplos: 
+- https://developer.xamarin.com/guides/xamarin-forms/user-interface/animation/
+
 ---
 
 **Fontes** 
