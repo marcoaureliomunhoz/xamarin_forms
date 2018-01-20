@@ -221,6 +221,13 @@ Uma das formas de fazer customizações em views é através dos **Custom Render
 
 - https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/custom-renderer
 
+Uma outra forma de fazer customizações em views é através de **Effects**.
+
+- https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/effects
+- https://blog.xamarin.com/customizing-xamarin-forms-controls-with-effects
+- https://www.jimbobbennett.io/effects-in-xamarin-forms
+- 
+
 ---
 
 **Fontes** 
