@@ -187,11 +187,24 @@ Exemplo:
 Mais exemplos: 
 - https://developer.xamarin.com/guides/xamarin-forms/user-interface/animation/
 
+**Plugins** 
+
+Uma das formas de acessar os recursos físicos do dispositivo é usar injeção de serviço e para cada plataforma usar suas APIs específicas. 
+
+Uma outra forma é usar **plugins** prontos. Os plugins abstraem toda a dificuldade de usar injeção de serviço. 
+
+Mais informações: 
+- https://developer.xamarin.com/guides/xamarin-forms/platform-features/plugins
+- https://github.com/xamarin/XamarinComponents
+- https://channel9.msdn.com/Blogs/MVP-VisualStudio-Dev/Useful-Plugins-for-Xamarin-Forms
+- https://montemagno.com/tag/plugins
+
 ---
 
 **Fontes** 
 
-- https://developer.xamarin.com/guides/xamarin-forms/
+- https://developer.xamarin.com/guides/xamarin-forms/ (Xamarin)
+- https://developer.xamarin.com/guides/xamarin-forms/platform-features/plugins (Xamarin)
 - https://www.youtube.com/channel/UCe-f02uZgEXdHmHpC3loAQg (Xamarin)
 - https://www.youtube.com/user/MicrosoftBrasil (Microsoft Brasil)
 - https://www.youtube.com/channel/UCFaQBRaoHrAxcGoeY8E5jvQ (Monkey Nights)
