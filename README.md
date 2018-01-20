@@ -198,6 +198,13 @@ Mais informações:
 - https://github.com/xamarin/XamarinComponents
 - https://channel9.msdn.com/Blogs/MVP-VisualStudio-Dev/Useful-Plugins-for-Xamarin-Forms
 - https://montemagno.com/tag/plugins
+- https://montemagno.com/what-exactly-is-a-plugin-for-xamarin
+
+**Trabalhando com Gráficos - Charts** 
+
+- https://www.youtube.com/watch?v=oKSGNNZxboA (Tiago Britto)
+- https://blog.xamarin.com/microcharts-elegant-cross-platform-charts-for-any-app
+- https://xamarinhelp.com/charting-xamarin-forms
 
 ---
 
