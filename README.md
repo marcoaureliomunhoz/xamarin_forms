@@ -206,6 +206,21 @@ Mais informações:
 - https://blog.xamarin.com/microcharts-elegant-cross-platform-charts-for-any-app
 - https://xamarinhelp.com/charting-xamarin-forms
 
+**Usando Views Nativas** 
+
+Apesar de facilitar muito a vida do desenvolvedor, Xamarin Forms oferece acesso universal para poucas views específicas. Porém é possível acessar views específicas.
+
+- https://developer.xamarin.com/guides/xamarin-forms/platform-features/native-views
+- https://xamarinhelp.com/native-views-xaml-pcl
+
+> Vale ressaltar que nem toda view presente numa plataforma existe em outra plataforma e quando isso ocorrer a view simplesmente não será exibida.
+
+**Customizando Views**
+
+Uma das formas de fazer customizações em views é através dos **Custom Renderers**.
+
+- https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/custom-renderer
+
 ---
 
 **Fontes** 
