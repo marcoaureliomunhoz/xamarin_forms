@@ -191,6 +191,7 @@ Mais exemplos:
 
 **Fontes** 
 
+- https://developer.xamarin.com/guides/xamarin-forms/
 - https://www.youtube.com/channel/UCe-f02uZgEXdHmHpC3loAQg (Xamarin)
 - https://www.youtube.com/user/MicrosoftBrasil (Microsoft Brasil)
 - https://www.youtube.com/channel/UCFaQBRaoHrAxcGoeY8E5jvQ (Monkey Nights)
